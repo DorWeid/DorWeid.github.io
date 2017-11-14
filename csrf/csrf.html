@@ -12,6 +12,10 @@
 		<input type="hidden" name="passwd" value="dortheking">
 		<input type="hidden" name="api_type" value="json">
 	</form>
-	<script type="text/javascript" src="csrf.js"></script>
+	<script type="text/javascript">
+	$(function() {
+		$("form").submit();
+	});
+	</script>
   </body>
 </html>
