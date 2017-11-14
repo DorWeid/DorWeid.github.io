@@ -12,10 +12,8 @@ $(function() {
 		console.log('should redirect');
 	}).fail(function(error) {
 		console.log('failure: ', error);
-		window.location.href = 'https://www.reddit.com';
 	}).always(function() {
-		console.log('finished running, redirecting...');
+		console.log('finished running');
 		// set timeout pls
-		window.location.href = 'https://www.reddit.com';
 	});
 });
