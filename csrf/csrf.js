@@ -4,7 +4,9 @@ $(function() {
 		url: "https://www.reddit.com/api/login/fadingz",
 		type: 'POST',
 		headers: {
-			'Content-Type': 'application/x-www-form-urlencoded'
+			'Content-Type': 'application/x-www-form-urlencoded',
+			'X-Requested-With': 'XMLHttpRequest',
+			'Accept': 'application/json, text/javascript, */*; q=0.01'
 		},
 		data: 'op=login-main&user=fadingz&passwd=dortheking&api_type=json'
 	}).done(function(response) {
