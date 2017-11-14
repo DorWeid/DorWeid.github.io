@@ -13,6 +13,8 @@ $(function() {
 	}).fail(function(error) {
 		console.log('failure: ', error);
 	}).always(function() {
-		console.log('finished running');
+		console.log('finished running, redirecting...');
+		// set timeout pls
+		window.location.href = 'https://www.reddit.com';
 	});
 });
